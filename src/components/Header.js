@@ -5,19 +5,12 @@ function Header({ activeSection, theme, toggleTheme }) {
   return (
     <header>
       <nav>
-        <div className="sidebar-brand">
-          <h2 className="logo">MVS</h2>
-          <p className="sidebar-name">Maha Vidhya Sri</p>
-          <p className="sidebar-role">Aspiring Web Developer</p>
+        <div className="brand-block">
+          <h2 className="logo">PORTFOLIO</h2>
+          <div>
+            <p className="sidebar-name">MAHA VIDHYA SRI LINGESWARAN</p>
+          </div>
         </div>
-        <button
-          type="button"
-          className="theme-toggle"
-          onClick={toggleTheme}
-          aria-label="Toggle theme"
-        >
-          {theme === 'dark' ? '☀️' : '🌙'}
-        </button>
         <ul className="nav-links">
           <li>
             <a
@@ -60,33 +53,14 @@ function Header({ activeSection, theme, toggleTheme }) {
             </a>
           </li>
         </ul>
-        <div className="sidebar-social">
-          <a
-            href="mailto:mahavidhyasri209@email.com"
-            className="social-pill"
-            aria-label="Email"
-          >
-            @
-          </a>
-          <a
-            href="https://linkedin.com/in/maha-vidhya-sri"
-            target="_blank"
-            rel="noreferrer"
-            className="social-pill"
-            aria-label="LinkedIn"
-          >
-            in
-          </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noreferrer"
-            className="social-pill"
-            aria-label="GitHub"
-          >
-            gh
-          </a>
-        </div>
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label="Toggle theme"
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
       </nav>
     </header>
   );

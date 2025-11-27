@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
+import Achievements from './components/Achievements';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -52,10 +53,11 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Achievements />
         <Projects />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }

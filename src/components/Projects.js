@@ -3,28 +3,40 @@ import '../App.css';
 
 const projects = [
   {
-    title: 'GreenCoin – Sustainability Reward System',
+    title: 'Sports Club Management System',
     description:
-      'A gamified platform encouraging eco-friendly actions, with tracking and redeemable points.',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    demo: '#',
-    code: '#',
+      'Desktop application to manage members, teams, fees and events for a sports club, with a simple GUI and database integration.',
+    tags: ['Python', 'MySQL', 'Tkinter'],
   },
   {
-    title: 'Personal Portfolio',
+    title: 'E‑Commerce Website',
     description:
-      'A responsive personal portfolio website to showcase my skills, projects, and contact details.',
+      'Multi-page e‑commerce site with product listing, cart experience and basic order flow to simulate a real online store.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    demo: '#',
-    code: '#',
   },
   {
-    title: 'Task Tracker App',
+    title: 'Medical Chatbot',
     description:
-      'A simple task management app to add, update, and track daily tasks and progress.',
-    tags: ['React', 'Hooks'],
-    demo: '#',
-    code: '#',
+      'Python‑based chatbot to answer basic medical and health‑related queries, guiding users with symptom‑based responses.',
+    tags: ['Python', 'NLP (basic)'],
+  },
+  {
+    title: 'Student Management Chatbot',
+    description:
+      'Chatbot for handling student information queries such as attendance, basic records and FAQs, backed by a MySQL database.',
+    tags: ['Python', 'MySQL'],
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description:
+      'This portfolio that showcases my projects, skills, achievements and contact details with a modern dark/light theme.',
+    tags: ['React', 'CSS'],
+  },
+  {
+    title: 'SafetySphere – Disaster Awareness Platform',
+    description:
+      'Web application that spreads awareness among students about disaster management using clear content, visuals and simple interactions.',
+    tags: ['Python', 'HTML', 'CSS'],
   },
 ];
 
