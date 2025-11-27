@@ -19,7 +19,7 @@ function Footer() {
             className="footer-pill"
             aria-label="Email"
           >
-            Email
+            <span className="footer-icon footer-icon-email" />
           </a>
           <a
             href="https://linkedin.com/in/maha-vidhya-sri"
@@ -28,7 +28,7 @@ function Footer() {
             className="footer-pill"
             aria-label="LinkedIn"
           >
-            LinkedIn
+            <span className="footer-icon footer-icon-linkedin" />
           </a>
           <a
             href="https://github.com"
@@ -37,7 +37,7 @@ function Footer() {
             className="footer-pill"
             aria-label="GitHub"
           >
-            GitHub
+            <span className="footer-icon footer-icon-github" />
           </a>
           <a
             href="https://instagram.com"
@@ -46,7 +46,7 @@ function Footer() {
             className="footer-pill"
             aria-label="Instagram"
           >
-            Instagram
+            <span className="footer-icon footer-icon-instagram" />
           </a>
         </div>
       </div>

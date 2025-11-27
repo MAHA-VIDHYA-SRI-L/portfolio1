@@ -44,42 +44,22 @@ function Projects() {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <div className="project-card" key={project.title}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="project-tags">
-              {project.tags.map((tag) => (
-                <span className="project-tag" key={tag}>
-                  {tag}
-                </span>
-              ))}
+      <div className="projects-carousel">
+        <div className="projects-track">
+          {[...projects, ...projects].map((project, index) => (
+            <div className="project-card" key={project.title + index}>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-tags">
+                {project.tags.map((tag) => (
+                  <span className="project-tag" key={tag + index}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="project-links">
-              {project.demo && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-link demo-link"
-                >
-                  Live demo
-                </a>
-              )}
-              {project.code && (
-                <a
-                  href={project.code}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-link code-link"
-                >
-                  View code
-                </a>
-              )}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
