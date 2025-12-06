@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-top">
         <h3>Let’s build something together</h3>
         <p>
-          Looking for a motivated web developer intern or fresher?{' '}
+          Looking for a motivated full stack developer or intern?{' '}
           <a href="#contact" className="footer-contact-link">
             Contact me
           </a>{' '}

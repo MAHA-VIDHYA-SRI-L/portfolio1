@@ -8,7 +8,7 @@ function Header({ activeSection, theme, toggleTheme }) {
         <div className="brand-block">
           <h2 className="logo">PORTFOLIO</h2>
           <div>
-            <p className="sidebar-name">MAHA VIDHYA SRI LINGESWARAN</p>
+            <p className="sidebar-name"></p>
           </div>
         </div>
         <ul className="nav-links">

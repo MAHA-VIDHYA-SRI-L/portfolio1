@@ -9,10 +9,10 @@ function Skills() {
         <div className="skills-group">
           <h3>Front‑End</h3>
           <ul className="skill-list">
-            <li>HTML5 &amp; Semantic Markup</li>
-            <li>CSS3, Flexbox &amp; Grid</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
             <li>Responsive Design</li>
-            <li>JavaScript (ES6+)</li>
+            <li>JavaScript</li>
             <li>React (basics)</li>
           </ul>
         </div>
@@ -21,7 +21,7 @@ function Skills() {
           <ul className="skill-list">
             <li>Python</li>
             <li>Node.js (basics)</li>
-            <li>SQL fundamentals</li>
+            <li>MySQL</li>
           </ul>
         </div>
         <div className="skills-group">
@@ -30,6 +30,8 @@ function Skills() {
             <li>Git &amp; GitHub</li>
             <li>VS Code</li>
             <li>Figma (for basic UI mockups)</li>
+            <li>Canva</li>
+            <li>Excel</li>
           </ul>
         </div>
       </div>
@@ -94,7 +96,7 @@ function Skills() {
           </div>
           <div className="tech-logo-item">
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              src="/git-logo.png"
               alt="GitHub logo"
             />
             <span>GitHub</span>
@@ -107,17 +109,11 @@ function Skills() {
             <span>VS Code</span>
           </div>
           <div className="tech-logo-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Microsoft_Excel_2013-2019_logo.svg"
-              alt="Excel logo"
-            />
+            <div className="tech-logo-circle excel-circle">X</div>
             <span>Excel</span>
           </div>
           <div className="tech-logo-item">
-            <img
-              src="https://seeklogo.com/images/C/canva-logo-1D33A56B4F-seeklogo.com.png"
-              alt="Canva logo"
-            />
+            <div className="tech-logo-circle canva-circle">C</div>
             <span>Canva</span>
           </div>
         </div>

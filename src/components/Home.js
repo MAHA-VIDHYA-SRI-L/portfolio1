@@ -9,7 +9,7 @@ function Home() {
           <h1>
             Hello, I'm <span>MAHA VIDHYA SRI</span>
           </h1>
-          <p>Python • Java • React • HTML/CSS • MySQL • MongoDB</p>
+          <p>Full Stack Developer | Python • Java • React • HTML/CSS • MySQL • MongoDB</p>
           <a href="/Resume.pdf" download className="btn">
             Download Resume
           </a>
