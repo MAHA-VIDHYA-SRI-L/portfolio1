@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { FaGithub, FaLinkedinIn, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -19,34 +20,42 @@ function Footer() {
             className="footer-pill"
             aria-label="Email"
           >
-            <span className="footer-icon footer-icon-email" />
+            <span className="footer-icon footer-icon-email">
+              <FaEnvelope />
+            </span>
           </a>
           <a
-            href="https://linkedin.com/in/maha-vidhya-sri"
+            href="https://www.linkedin.com/in/maha-vidhya-sri-lingeswaran-241486327?utm_source=share_via&utm_content=profile&utm_medium=member_android"
             target="_blank"
             rel="noreferrer"
             className="footer-pill"
             aria-label="LinkedIn"
           >
-            <span className="footer-icon footer-icon-linkedin" />
+            <span className="footer-icon footer-icon-linkedin">
+              <FaLinkedinIn />
+            </span>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/MAHA-VIDHYA-SRI-L"
             target="_blank"
             rel="noreferrer"
             className="footer-pill"
             aria-label="GitHub"
           >
-            <span className="footer-icon footer-icon-github" />
+            <span className="footer-icon footer-icon-github">
+              <FaGithub />
+            </span>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/2006mvs?igsh=MTl6ZmIzd2RhbGt4Mw=="
             target="_blank"
             rel="noreferrer"
             className="footer-pill"
             aria-label="Instagram"
           >
-            <span className="footer-icon footer-icon-instagram" />
+            <span className="footer-icon footer-icon-instagram">
+              <FaInstagram />
+            </span>
           </a>
         </div>
       </div>

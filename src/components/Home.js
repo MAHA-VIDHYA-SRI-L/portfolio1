@@ -7,7 +7,9 @@ function Home() {
       <div className="home-inner">
         <div className="home-text">
           <h1>
-            Hello, I'm <span>MAHA VIDHYA SRI</span>
+            Hello, I'm
+            <br />
+            <span>MAHA VIDHYA SRI LINGESWARAN</span>
           </h1>
           <p>Full Stack Developer | Python • Java • React • HTML/CSS • MySQL • MongoDB</p>
           <a href="/Resume.pdf" download className="btn">
