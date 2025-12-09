@@ -14,7 +14,6 @@ function Skills() {
           <ul className="skill-list">
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>Responsive Design</li>
             <li>JavaScript</li>
             <li>React (basics)</li>
           </ul>
@@ -32,7 +31,6 @@ function Skills() {
           <ul className="skill-list">
             <li>Git &amp; GitHub</li>
             <li>VS Code</li>
-            <li>Figma (for basic UI mockups)</li>
             <li>Canva</li>
             <li>Excel</li>
           </ul>
@@ -122,47 +120,6 @@ function Skills() {
           <div className="tech-logo-item">
             <div className="tech-logo-circle canva-circle">C</div>
             <span>Canva</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Profile & Resume: public assets so GitHub Pages can serve them */}
-      <div className="profile-resume" style={{ marginTop: 24 }}>
-        <h3>Profile &amp; Resume</h3>
-        <div className="profile-resume-row" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-          <img
-            src={(process.env.PUBLIC_URL || '') + '/profile.jpg'}
-            alt="Profile"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = 'https://via.placeholder.com/240?text=Profile+Photo';
-            }}
-            style={{
-              width: 160,
-              height: 160,
-              objectFit: 'cover',
-              borderRadius: '50%',
-              boxShadow: '0 6px 18px rgba(0,0,0,0.12)'
-            }}
-          />
-          <div className="resume-actions">
-            <p style={{ margin: 0 }}>If the image or resume is missing after deploy, confirm both files exist in the public folder.</p>
-            <a
-              href={(process.env.PUBLIC_URL || '') + '/resume.pdf'}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                marginTop: 8,
-                padding: '8px 12px',
-                background: '#0b74de',
-                color: '#fff',
-                textDecoration: 'none',
-                borderRadius: 4
-              }}
-            >
-              Open / Download Resume
-            </a>
           </div>
         </div>
       </div>

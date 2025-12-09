@@ -1,6 +1,29 @@
 import React from 'react';
 import '../App.css';
-import profileImg from '../assets/profile.jpg';
+
+// Profile image with error handling
+const ProfileImage = () => {
+  const handleError = (e) => {
+    e.target.onerror = null;
+    e.target.src = 'https://via.placeholder.com/300x300?text=Profile+Image';
+  };
+  
+  return (
+    <img 
+      src={process.env.PUBLIC_URL + '/assets/profile.jpg'} 
+      alt="Profile" 
+      onError={handleError}
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        borderRadius: '50%',
+        border: '4px solid #fff',
+        boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+      }}
+    />
+  );
+};
 
 function Home() {
   return (
@@ -17,8 +40,14 @@ function Home() {
             Download Resume
           </a>
         </div>
-        <div className="home-avatar">
-          <img src= "./assets/profile.jpg" alt="Profile" className="avatar" />
+        <div className="home-avatar" style={{
+          width: '300px',
+          height: '300px',
+          borderRadius: '50%',
+          overflow: 'hidden',
+          margin: '0 auto'
+        }}>
+          <ProfileImage />
         </div>
       </div>
     </section>
