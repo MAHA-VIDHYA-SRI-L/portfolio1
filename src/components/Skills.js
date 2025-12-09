@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import gitLogo from '../assets/git-logo.png';
 
 function Skills() {
   return (
@@ -96,7 +97,7 @@ function Skills() {
           </div>
           <div className="tech-logo-item">
             <img
-              src="/git-logo.png"
+              src={gitLogo}
               alt="GitHub logo"
             />
             <span>GitHub</span>

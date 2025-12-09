@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import profileImg from '../assets/profile.jpg';
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
           </a>
         </div>
         <div className="home-avatar">
-          <img src="/profile.jpg" alt="Your Photo" className="avatar" />
+          <img src={profileImg} alt="Profile" className="avatar" />
         </div>
       </div>
     </section>
