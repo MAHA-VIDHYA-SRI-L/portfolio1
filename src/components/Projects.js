@@ -26,12 +26,12 @@ const projects = [
       'Chatbot for handling student information queries such as attendance, basic records and FAQs, backed by a MySQL database.',
     tags: ['Python', 'MySQL'],
   },
-  {
+  /*{
     title: 'Personal Portfolio Website',
     description:
       'This portfolio that showcases my projects, skills, achievements and contact details with a modern dark/light theme.',
     tags: ['React', 'CSS'],
-  },
+  },*/
   {
     title: 'SafetySphere – Disaster Awareness Platform',
     description:
