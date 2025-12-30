@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -17,45 +17,43 @@ function App() {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  useEffect(() => {
-    const sectionIds = ['home', 'about', 'skills', 'projects', 'contact'];
-    const sections = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean);
+  const handleNavClick = (section) => {
+    setActiveSection(section);
+    // Smooth scroll to section
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-      observer.disconnect();
-    };
-  }, []);
+  // Function to render the active section
+  const renderActiveSection = () => {
+    switch (activeSection) {
+      case 'home':
+        return <Home />;
+      case 'about':
+        return <About />;
+      case 'skills':
+        return <Skills />;
+      case 'projects':
+        return <Projects />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Home />;
+    }
+  };
 
   return (
     <div className={`App theme-${theme}`}>
       <Header
         activeSection={activeSection}
+        setActiveSection={handleNavClick}
         theme={theme}
         toggleTheme={toggleTheme}
       />
       <main>
-        <Home />
-        <About />
-        <Skills />
-        <Achievements />
-        <Projects />
-        <Contact />
+        {renderActiveSection()}
       </main>
       <Footer />
     </div>

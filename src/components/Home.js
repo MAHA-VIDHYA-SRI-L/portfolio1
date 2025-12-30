@@ -33,7 +33,7 @@ function Home() {
           <h1>
             Hello, I'm
             <br />
-            <span>MAHA VIDHYA SRI LINGESWARAN</span>
+            <span>MAHA VIDHYA SRI L </span>
           </h1>
           <p>Full Stack Developer | Python • Java • React • HTML/CSS • MySQL • MongoDB</p>
           <a href="./assets/Resume.pdf" download className="btn">

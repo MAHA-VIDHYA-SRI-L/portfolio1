@@ -1,42 +1,38 @@
 import React from 'react';
 import '../App.css';
 
-function Header({ activeSection, theme, toggleTheme }) {
+function Header({ activeSection, setActiveSection, theme, toggleTheme }) {
+  const navItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
+  const handleNavClick = (e, section) => {
+    e.preventDefault();
+    setActiveSection(section);
+  };
+
   return (
     <header>
       <nav>
         <div className="brand-block">
           <h2 className="logo">PORTFOLIO</h2>
-          <div>
-            <p className="sidebar-name"></p>
-          </div>
         </div>
         <ul className="nav-links">
-          {activeSection === 'home' && (
-            <li>
-              <a href="#home" className="nav-link active">Home</a>
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
+                onClick={(e) => handleNavClick(e, item.id)}
+              >
+                {item.label}
+              </a>
             </li>
-          )}
-          {activeSection === 'about' && (
-            <li>
-              <a href="#about" className="nav-link active">About</a>
-            </li>
-          )}
-          {activeSection === 'skills' && (
-            <li>
-              <a href="#skills" className="nav-link active">Skills</a>
-            </li>
-          )}
-          {activeSection === 'projects' && (
-            <li>
-              <a href="#projects" className="nav-link active">Projects</a>
-            </li>
-          )}
-          {activeSection === 'contact' && (
-            <li>
-              <a href="#contact" className="nav-link active">Contact</a>
-            </li>
-          )}
+          ))}
         </ul>
         <button
           type="button"
