@@ -12,46 +12,31 @@ function Header({ activeSection, theme, toggleTheme }) {
           </div>
         </div>
         <ul className="nav-links">
-          <li>
-            <a
-              href="#home"
-              className={`nav-link ${activeSection === 'home' ? 'active' : ''}`}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}
-            >
-              Skills
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
-            >
-              Contact
-            </a>
-          </li>
+          {activeSection === 'home' && (
+            <li>
+              <a href="#home" className="nav-link active">Home</a>
+            </li>
+          )}
+          {activeSection === 'about' && (
+            <li>
+              <a href="#about" className="nav-link active">About</a>
+            </li>
+          )}
+          {activeSection === 'skills' && (
+            <li>
+              <a href="#skills" className="nav-link active">Skills</a>
+            </li>
+          )}
+          {activeSection === 'projects' && (
+            <li>
+              <a href="#projects" className="nav-link active">Projects</a>
+            </li>
+          )}
+          {activeSection === 'contact' && (
+            <li>
+              <a href="#contact" className="nav-link active">Contact</a>
+            </li>
+          )}
         </ul>
         <button
           type="button"
